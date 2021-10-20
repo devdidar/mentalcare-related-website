@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
-import { HashLink } from "react-router-hash-link";
+import { useParams,Link } from "react-router-dom";
 
 const ServiceDetail = () => {
   const { servicesID } = useParams();
@@ -26,11 +25,11 @@ const ServiceDetail = () => {
         <h1>Name: {singleService?.title}</h1>
         <img src={singleService?.img} alt="" className="inline-block py-2" />
         <p>{singleService?.description}</p>
-        <HashLink smooth to="/home#contact-us">
+        <Link  to="/contact-us">
           <button className="bg-green-400 ml-2 px-3 py-2 rounded my-2">
             Get This
           </button>
-        </HashLink>
+        </Link>
       </div>
     </div>
   );

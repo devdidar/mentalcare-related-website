@@ -1,32 +1,35 @@
 import React, { useState } from "react";
-import { HashLink } from 'react-router-hash-link';
+import { Link, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import "./Header.css";
 const Header = () => {
   const [barIcon, setBarIcon] = useState(false);
   const { user, handleLogOut } = useAuth();
-  console.log(user);
+  const history = useHistory();
+  const handleGoToHome = () => {
+    history.push("/");
+  };
   return (
     <>
       <div className="flex justify-between mx-auto px-5 py-2 bg-green-50 header">
-        <div>
+        <div onClick={handleGoToHome} className="cursor-pointer">
           <h3 className="text-3xl logo-title">
             Mental <span className="text-green-600 ">Talks</span>
           </h3>
         </div>
         <nav className={barIcon ? "mobile-menu" : "mr-32 text-xl"}>
-          <HashLink smooth to="/home" className="m-2">
+          <Link to="/home" className="m-2">
             Home
-          </HashLink>
-          <HashLink smooth to="/home#services" className="m-2">
+          </Link>
+          <Link to="/services" className="m-2">
             Services
-          </HashLink>
-          <HashLink smooth to="/home#doctors" className="m-2">
+          </Link>
+          <Link to="/doctors" className="m-2">
             Doctors
-          </HashLink>
-          <HashLink smooth to="/home#contact-us" className="m-2">
+          </Link>
+          <Link to="/contact-us" className="m-2">
             Contact us
-          </HashLink>
+          </Link>
           {user?.email ? (
             <>
               <span>{user?.displayName}</span>
@@ -39,22 +42,22 @@ const Header = () => {
             </>
           ) : (
             <>
-              <HashLink to="/login">
+              <Link to="/login">
                 <button
                   style={{ borderRadius: "5px" }}
-                  className=" bg-green-400 px-3 py-2"
+                  className=" bg-green-400 px-3 py-2 login"
                 >
                   Login
                 </button>
-              </HashLink>
-              <HashLink to="/register" className="ml-3">
+              </Link>
+              <Link to="/register" className="ml-3">
                 <button
                   style={{ borderRadius: "5px", border: "1px solid #34D399" }}
-                  className="px-3 py-2"
+                  className="px-3 py-2 register"
                 >
                   Register
                 </button>
-              </HashLink>
+              </Link>
             </>
           )}
         </nav>

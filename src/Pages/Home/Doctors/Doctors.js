@@ -11,9 +11,9 @@ const Doctors = () => {
   return (
     <div id="doctors">
       <div>
-        <h2 className="text-center text-3xl mt-20">Our Doctors</h2>
+        <h2 className="text-center text-3xl my-20">Our Doctors</h2>
       </div>
-      <div className="grid grid-cols-3 mx-10 text-center gap-10 doctors">
+      <div className="grid grid-cols-3 mx-10 text-center gap-10 doctors mb-20">
         {doctors.map((doctor) => (
           <Doctor key={doctor.id} doctor={doctor}></Doctor>
         ))}

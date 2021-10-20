@@ -17,4 +17,11 @@
   .mobile-menu a {
     display: block;
   }
+  .login {
+    margin-left: 10px;
+  }
+  .register {
+    margin-top: 5px;
+    padding-right: 15px;
+  }
 }
