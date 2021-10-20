@@ -7,10 +7,17 @@ const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const { handleCreateUserInUsingEmail, handleSignInUsingGoogle } = useAuth();
   const handleRegister = (e) => {
     e.preventDefault();
-    handleCreateUserInUsingEmail(name, email, password);
+    if (password.length < 6) {
+      setError("password length should be at least 6 characters");
+      return;
+    } else {
+      setError("");
+      handleCreateUserInUsingEmail(name, email, password);
+    }
   };
   return (
     <>
@@ -46,6 +53,7 @@ const Register = () => {
         </form>
       </div>
       <p className="text-center mb-4">
+        <p className="text-red-600">{error}</p>
         Already have an account?
         <Link to="/login">
           <button className=" bg-green-400 ml-2 px-3 py-2 rounded cursor-pointer">
