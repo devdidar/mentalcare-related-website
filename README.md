@@ -6,7 +6,7 @@
 
 ## Deploy
 
- This Website url is:   [learn markets](https://mental-helath-website.web.app/)
+ This Website url is:   [Mental Talks](https://mental-helath-website.web.app/)
 
 
 ## Description
