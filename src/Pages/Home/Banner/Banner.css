@@ -1,0 +1,20 @@
+@media only screen and (max-width: 666px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-left {
+    width: 85%;
+  }
+  .banner-title {
+    font-size: 25px;
+    display: inline-block;
+  }
+  .image img {
+    width: 80%;
+    margin: 30px 15px;
+    display: inline-block;
+  }
+}

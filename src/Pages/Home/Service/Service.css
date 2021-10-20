@@ -1,0 +1,17 @@
+.service {
+  margin-top: 100px;
+  box-shadow: 0px 0px 5px 0px #34d399;
+  height: 300px;
+  text-align: center;
+  padding-top: 20px;
+}
+.service img {
+  display: inline-block;
+  height: 125px;
+  width: 125px;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  background-color: #eefbf7;
+  border-radius: 50%;
+  padding: 20px;
+}

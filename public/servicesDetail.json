@@ -1,0 +1,40 @@
+{
+    "services":[
+        {
+           "id": 1,
+           "title": "Depression therapy",
+           "img": "https://i.ibb.co/jJHKyWL/service-5-png-width-120-height-90-name-service-5.png",
+           "description": "Symptoms caused by major depression can vary from person to person. To clarify the type of depression you have, your doctor may add one or more specifiers. A specifier means that you have."
+        },
+        {
+           "id": 2,
+           "title": "Couples Counseling",
+           "img": "https://i.ibb.co/HqrdRBC/pic-serv1-png-width-120-height-90-name-pic-serv1.png",
+           "description": "At Relate, we have experience in counseling people from different backgrounds, including LGBT individuals and couples, so you can rest assured you will find a counselor to meet your needs."
+        },
+        {
+           "id": 3,
+           "title": "Relationships",
+           "img": "https://i.ibb.co/n0ThsSV/service-6-png-width-120-height-90-name-service-6.png",
+           "description": "Love is one of the most profound emotions known to human beings. There are many kinds of love, but many people seek its expression in a romantic relationship with a compatible partner (or partners)."
+        },
+        {
+           "id": 4,
+           "title": "Anxiety Disorder",
+           "img": "https://i.ibb.co/n0ThsSV/service-6-png-width-120-height-90-name-service-6.png",
+           "description": "An anxiety disorder is a type of mental health condition. If you have an anxiety disorder, you may respond to certain things and situations with fear and dread. You may also experience physical signs."
+        },
+        {
+           "id": 5,
+           "title": "Children Therapy",
+           "img": "https://i.ibb.co/vZYKkmB/service-3-png-width-120-height-90-name-service-3.png",
+           "description": "Psychotherapy is a form of psychiatric treatment that involves therapeutic conversations and interactions between a therapist and a child or family. It can help children and families understand."
+        },
+        {
+           "id": 6,
+           "title": "Individual Therapy",
+           "img": "https://i.ibb.co/qmfFtzm/service-4-png-width-120-height-90-name-service-4.png",
+           "description": "Individual therapy is a form of therapy in which the client is treated on a one-on-one basis with a therapist. The most popular form of therapy, individual therapy may encompass many different."
+        }
+     ]
+}
